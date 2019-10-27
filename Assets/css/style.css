@@ -2,3 +2,21 @@ hr {
     border: 3px solid black;
     width: 100%;
 }
+
+#timeBorder {
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    border-right: 1px solid black;
+}
+
+#inputBorder {
+    border: 1px solid white;
+}
+
+#buttonBorder {
+    border-top: 1px solid white;
+}
+
+#buttonBorder2 {
+    border-left: 1px solid black;
+}
