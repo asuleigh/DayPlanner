@@ -3,20 +3,20 @@ hr {
     width: 100%;
 }
 
-#timeBorder {
+#timeID {
     border-top: 1px dotted black;
     border-bottom: 1px dotted black;
     border-right: 1px solid black;
 }
 
-#inputBorder {
+#inputID {
     border: 1px solid white;
 }
 
-#buttonBorder {
+#buttonID {
     border-top: 1px solid white;
 }
 
-#buttonBorder2 {
+#saveButton {
     border-left: 1px solid black;
 }
