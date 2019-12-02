@@ -1,6 +1,8 @@
 # DayPlanner
-LINK: https://asuleigh.github.io/DayPlanner/
-LINK TO SCREENSHOT: Assets\images\ScreenShotForDayPlanner.png
+-LINK: https://asuleigh.github.io/DayPlanner/
+
+-LINK TO SCREENSHOT: https://github.com/asuleigh/DayPlanner/blob/master/Assets/images/ScreenshotForDayPlanner.png
+
 ABSTRACT: A project that will be helpful for daily planning and organization of tasks. This project will allow the user to input information into forms for each hour of the day from 9am-5pm and save that information so that it can be retrieved in the future. The time inputs are also color coded for past, present, and future events.
 
 TABLE OF CONTENTS:
