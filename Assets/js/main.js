@@ -18,13 +18,13 @@ function display() {
 
     /* Use if and else if statements to grab the currentBGHours variable and compare it to the currentTime variable
        after the currentTime variable gets the current hour using .hour()*/
-        if (currentBGHours[i] < currentTime.hour()) {
+        if (currentBGHours[i] === currentTime.hour()) {
     /*Then under each statement set up function that grabs the current time that, after comparing to
        each statement, changes the background color of the input fields according to the time of day*/
             $("#" + currentBGTime[i]).css("background-color", "#b8b3b3");
         }
 
-        else if (currentBGHours[i] === currentTime.hour()) {
+        else if (currentBGHours[i] < currentTime.hour()) {
             $("#" + currentBGTime[i]).css("background-color", "#c70a0a");
         }
 
