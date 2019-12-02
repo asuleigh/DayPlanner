@@ -29,8 +29,31 @@ function display() {
     var currentBGHours = [9, 10, 11, 12, 13, 14, 15, 16, 17]; 
     // Creates variable for current time using moment.js
     var currentTime = moment();
+
+    /* Create a for loop to set the input id with a value of [i] in localStorage, then get the id from local storage 
+       to use in if/else if statements*/
+    for (var i = 0; i < 9; i++) {
+        $("#" + currentBGTime[i]).val(localStorage.getItem(currentBGTime[i] + "inputBG"));
+
+    /* Use if and else if statements to grab the currentBGHours variable and compare it to the currentTime variable
+       after the currentTime variable gets the current hour using .hour()*/
+        if (currentBGHours[i] < currentTime.hour()) {
+    /*Then under each statement set up function that grabs the current time that, after comparing to
+       each statement, changes the background color of the input fields according to the time of day*/
+            $("#" + currentBGTime[i]).css("background-color", "#b8b3b3");
+        }
+
+        else if (currentBGHours[i] === currentTime.hour()) {
+            $("#" + currentBGTime[i]).css("background-color", "#c70a0a");
+        }
+
+        else if (currentBGHours[i] > currentTime.hour()) {
+            $("#" + currentBGTime[i]).css("background-color", "#54ca93");
+        };
+    };
 };
 
+// Display function for input colors
 display();
 
 
