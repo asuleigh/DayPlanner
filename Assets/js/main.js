@@ -3,7 +3,6 @@ $('#currentDate').text(moment().format('dddd, MMMM Do'));
 
 /* Setting up function to get values from localStorage using ids from 
 the input areas in the HTML*/
-
 $('#9am').val(localStorage.getItem('#9am'));
 $('#10am').val(localStorage.getItem('#10am'));
 $('#11am').val(localStorage.getItem('#11am'));
@@ -20,5 +19,19 @@ $('.btn').click( function() {
     let storeInput = $(this).val();
     localStorage.setItem(storeInput, $(storeInput).val());
     });
+
+/* Create a function for displaying colors inside of the input sections according
+   to time of day*/
+function display() {
+    // Creates currentBGTime variable, which calls the ids of the inputs and puts them into an array
+    var currentBGTime = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
+    // Creates currentBGHours variable, which creates an array using hours of the day
+    var currentBGHours = [9, 10, 11, 12, 13, 14, 15, 16, 17]; 
+    // Creates variable for current time using moment.js
+    var currentTime = moment();
+};
+
+display();
+
 
 
