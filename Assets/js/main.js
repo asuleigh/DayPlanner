@@ -21,11 +21,11 @@ function display() {
         if (currentBGHours[i] === currentTime.hour()) {
     /*Then under each statement set up function that grabs the current time that, after comparing to
        each statement, changes the background color of the input fields according to the time of day*/
-            $("#" + currentBGTime[i]).css("background-color", "#b8b3b3");
+            $("#" + currentBGTime[i]).css("background-color", "#c70a0a");
         }
 
         else if (currentBGHours[i] < currentTime.hour()) {
-            $("#" + currentBGTime[i]).css("background-color", "#c70a0a");
+            $("#" + currentBGTime[i]).css("background-color", "#b8b3b3");
         }
 
         else if (currentBGHours[i] > currentTime.hour()) {
